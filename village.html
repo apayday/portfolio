@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Build the Village · [YOUR NAME]</title>
+  <meta name="description" content="Explore how my projects, research methods and skills connect.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="nav">
+      <a class="nav__brand" href="index.html">[YOUR NAME]</a>
+      <nav class="nav__links" aria-label="Main">
+        <a href="index.html#case">Case study</a>
+        <a href="ux-spotted.html">UX Spotted</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="village">
+      <svg viewBox="0 0 760 680" aria-labelledby="village-title">
+        <title id="village-title">Network linking projects, research methods and skills. Select a node to see details.</title>
+        <g aria-hidden="true">
+          <line class="edge" data-to="project-a" x1="380" y1="340" x2="495" y2="141"/>
+          <line class="edge" data-to="accessibility" x1="380" y1="340" x2="265" y2="141"/>
+          <line class="edge" data-to="frontend" x1="380" y1="340" x2="150" y2="340"/>
+          <line class="edge" data-to="project-b" x1="380" y1="340" x2="265" y2="539"/>
+          <line class="edge" data-to="affinity" x1="380" y1="340" x2="495" y2="539"/>
+          <line class="edge" data-to="interviews" x1="380" y1="340" x2="610" y2="340"/>
+        </g>
+
+        <g class="node node--center" aria-hidden="true">
+          <circle cx="380" cy="340" r="52" fill="#14201C"/>
+          <text x="380" y="345" text-anchor="middle" font-size="15" fill="#FFFFFF">[YOUR NAME]</text>
+        </g>
+
+        <g class="node" data-id="project-a" tabindex="0" role="button" aria-label="Project A">
+          <circle cx="495" cy="141" r="48" fill="#14201C"/>
+          <text x="495" y="146" text-anchor="middle" font-size="14" fill="#FFFFFF">[Project A]</text>
+        </g>
+        <g class="node" data-id="project-b" tabindex="0" role="button" aria-label="Project B">
+          <circle cx="265" cy="539" r="48" fill="#14201C"/>
+          <text x="265" y="544" text-anchor="middle" font-size="14" fill="#FFFFFF">[Project B]</text>
+        </g>
+        <g class="node" data-id="interviews" tabindex="0" role="button" aria-label="Interviews">
+          <circle cx="610" cy="340" r="54" fill="#F2C14E"/>
+          <text x="610" y="345" text-anchor="middle" font-size="14" fill="#14201C">Interviews</text>
+        </g>
+        <g class="node" data-id="affinity" tabindex="0" role="button" aria-label="Affinity mapping">
+          <circle cx="495" cy="539" r="48" fill="#F2C14E"/>
+          <text x="495" y="535" text-anchor="middle" font-size="14" fill="#14201C">Affinity</text>
+          <text x="495" y="553" text-anchor="middle" font-size="14" fill="#14201C">mapping</text>
+        </g>
+        <g class="node" data-id="frontend" tabindex="0" role="button" aria-label="Front-end code">
+          <circle cx="150" cy="340" r="48" fill="#FFFFFF" stroke="#14201C" stroke-width="2"/>
+          <text x="150" y="336" text-anchor="middle" font-size="14" fill="#14201C">Front-end</text>
+          <text x="150" y="354" text-anchor="middle" font-size="14" fill="#14201C">code</text>
+        </g>
+        <g class="node" data-id="accessibility" tabindex="0" role="button" aria-label="Accessibility">
+          <circle cx="265" cy="141" r="48" fill="#FFFFFF" stroke="#14201C" stroke-width="2"/>
+          <text x="265" y="146" text-anchor="middle" font-size="14" fill="#14201C">Accessibility</text>
+        </g>
+      </svg>
+
+      <div class="village__side">
+        <div>
+          <div class="eyebrow">CONCEPT 3 · BUILD THE VILLAGE</div>
+          <h1>Explore how my work connects.</h1>
+          <p class="intro">Hover or tap a node to see a finding, a quote or a mini prototype.</p>
+        </div>
+
+        <div class="selected" aria-live="polite">
+          <div class="eyebrow eyebrow--sm eyebrow--grey">SELECTED</div>
+          <div class="selected__name" id="sel-name">Interviews</div>
+          <p class="selected__quote" id="sel-quote">“[A short participant quote or finding.]”</p>
+          <p class="selected__used" id="sel-used">Used in: [Project A], [Project B]</p>
+          <a class="btn btn--primary btn--sm" id="sel-link" href="index.html#research">Open the case study</a>
+        </div>
+
+        <ul class="legend">
+          <li><i class="k-project" aria-hidden="true"></i>Dark: projects</li>
+          <li><i class="k-method" aria-hidden="true"></i>Yellow: research methods</li>
+          <li><i class="k-skill" aria-hidden="true"></i>Outlined: skills</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="js/village.js"></script>
+</body>
+</html>
