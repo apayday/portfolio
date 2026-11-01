@@ -1,15 +1,11 @@
-# Portfolio teaser
+# Ashleigh Pay — portfolio
 
-A static portfolio site (HTML + CSS, no build step) built from the "Portfolio Teaser Mockup" design canvas.
+A single-page portfolio site (HTML, CSS and JavaScript, no build step).
 
-| Page | Design concept |
-| --- | --- |
-| `index.html` | Concept 1: case study micro-site |
-| `hybrid.html` | Hybrid: case study + clickable stage map + UX Spotted |
-| `ux-spotted.html` | Concept 2: UX Spotted social carousel |
-| `village.html` | Concept 3: Build the Village network (interactive, `js/village.js`) |
+- `index.html` — page content: hero with interactive map, case studies, about, contact
+- `styles.css` — brand tokens (colours, fonts) and layout
+- `script.js` — the interactive map of projects, research methods and skills
 
-Design tokens (colours, radii, font) live at the top of `css/styles.css`; change `--accent` to retheme.
-Bracketed text such as `[YOUR NAME]` is placeholder copy to replace.
+To add a case study, duplicate an `<article class="case">` in `index.html`, then add a matching `project` node in `script.js`.
 
 Preview locally with any static server, e.g. `python3 -m http.server`, or publish with GitHub Pages from the `main` branch.

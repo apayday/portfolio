@@ -3,99 +3,172 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>[YOUR NAME] · Case Study</title>
-  <meta name="description" content="One project, start to finish: research, insight, design decision and coded prototype.">
+  <title>Ashleigh Pay | UX designer</title>
+  <meta name="description" content="Ashleigh Pay is a UX designer who researches first, then builds what people need in code.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header class="nav">
-      <a class="nav__brand" href="index.html">[YOUR NAME]</a>
-      <nav class="nav__links" aria-label="Main">
-        <a href="#case">Case study</a>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- AP brandmark: roof-shaped A with a rose at its centre, and a P beside it -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="ap-mark" viewBox="0 0 124 100">
+      <g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M36 14 L8 86 M36 14 L64 86 M88 14 V86 M88 14 H104 a17 17 0 0 1 0 34 H88"/>
+      </g>
+      <g fill="currentColor">
+        <circle cx="36" cy="14" r="8"/><circle cx="8" cy="86" r="8"/><circle cx="64" cy="86" r="8"/>
+        <circle cx="88" cy="14" r="8"/><circle cx="88" cy="86" r="8"/>
+      </g>
+      <circle cx="36" cy="60" r="6" style="fill:var(--bloom,#E05A78)"/>
+      <circle cx="36" cy="60" r="12" fill="none" stroke-width="3" style="stroke:var(--bloom,#E05A78)"/>
+    </symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="Ashleigh Pay, home">
+        <svg class="mark" viewBox="0 0 124 100" aria-hidden="true"><use href="#ap-mark"/></svg>
+        <span>Ashleigh Pay</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero grid-auto" id="about">
-        <div>
-          <span class="badge">PORTFOLIO TEASER · CASE STUDY 01</span>
-          <h1>I research first, then <span class="accent">build what people need.</span></h1>
-          <p class="lede">One project, start to finish: the interviews, the insight, the design decision and the coded prototype. [One-line positioning statement from Assessment 1.]</p>
-          <div class="btn-row">
-            <a class="btn btn--primary" href="#case">Read the case study</a>
-            <a class="btn btn--outline" href="[yourportfolio.com]">See the full portfolio</a>
-          </div>
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <h1>Research-led UX, built in code.</h1>
+        <p class="lead">[One-line positioning statement from your Assessment 1 professional statement.]</p>
+        <div class="actions">
+          <a class="btn" href="#work">See the case studies</a>
+          <a class="btn btn--ghost" href="#contact">Say hello</a>
         </div>
+      </div>
 
-        <div class="window">
-          <div class="window__bar" aria-hidden="true"><span></span><span></span><span></span></div>
-          <div class="window__body">
-            <div class="eyebrow eyebrow--sm">CASE STUDY 01</div>
-            <div class="window__title">[PROJECT NAME]</div>
-            <ul class="chips" aria-label="Methods used">
-              <li class="chip">Interviews</li>
-              <li class="chip">Affinity map</li>
-              <li class="chip">Usability testing</li>
-              <li class="chip">Coded prototype</li>
-            </ul>
-            <div class="thumbs" aria-hidden="true"><div></div><div></div><div></div><div></div></div>
-          </div>
+      <div class="map-wrap">
+        <div class="map" id="map" role="group" aria-label="Map connecting projects, research methods and skills"></div>
+        <div class="node-panel" id="node-panel" aria-live="polite">
+          <h2 id="panel-title">Explore the map</h2>
+          <p id="panel-text">Select a node to see how a project, a method and a skill connect. Press Escape to reset.</p>
+          <p id="panel-links" class="panel-links"></p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="case">
-        <h2>The process, in four scrolls</h2>
-        <p>Each step links to the full detail in the portfolio.</p>
-        <div class="grid-auto">
-          <article class="card" id="research">
-            <div class="eyebrow">01 · RESEARCH</div>
-            <h3 class="card__title">Who I asked and why</h3>
-            <p class="card__body">[Method, participants and the question you set out to answer.]</p>
-          </article>
-          <article class="card" id="insight">
-            <div class="eyebrow">02 · INSIGHT</div>
-            <h3 class="card__title">What the patterns said</h3>
-            <p class="card__body">[Key theme from your affinity map or synthesis.]</p>
-          </article>
-          <article class="card" id="design">
-            <div class="eyebrow">03 · DESIGN</div>
-            <h3 class="card__title">The decision it led to</h3>
-            <p class="card__body">[Wireframe or flow and the rationale behind it.]</p>
-          </article>
-          <article class="card" id="code">
-            <div class="eyebrow">04 · CODE</div>
-            <h3 class="card__title">Built and tested</h3>
-            <p class="card__body">[Live prototype link and the tech you used.]</p>
-          </article>
-        </div>
-      </section>
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Case studies</h2>
+      <p class="section-intro">Each project follows the same path: spot the problem, define it, solve it, then show the result.</p>
 
-      <section class="insight grid-auto" aria-label="Key insight">
-        <figure style="margin:0">
-          <div class="eyebrow eyebrow--yellow">THE INSIGHT</div>
-          <blockquote class="insight__quote" style="margin-left:0;margin-right:0">“[A real participant quote that shaped the design goes here.]”</blockquote>
-          <figcaption class="insight__cite">[Participant role], interview [#]</figcaption>
-        </figure>
-        <div class="insight__panel">
-          <div class="eyebrow eyebrow--muted">DESIGN DECISION</div>
-          <div class="insight__decision">[One decision the research led to]</div>
-          <a class="btn btn--yellow" href="[prototype link]">Try the prototype</a>
-        </div>
-      </section>
+      <!-- Duplicate this article for each new case study. Keep the id in sync with the map in script.js -->
+      <article class="case" id="case-donation" aria-labelledby="case-donation-title">
+        <header>
+          <h3 id="case-donation-title">[Case study 1: Not-for-profit donation flow]</h3>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>[Your role]</dd></div>
+            <div><dt>Timeframe</dt><dd>[Weeks or months]</dd></div>
+            <div><dt>Tools</dt><dd>[Figma, HTML, CSS, JavaScript]</dd></div>
+          </dl>
+        </header>
+        <ol class="steps">
+          <li><h4>Identify the problem</h4><p>[Who it’s for and what you noticed going wrong.]</p></li>
+          <li><h4>Define the problem</h4><p>[Your research method, your key insight and a “How might we…?” statement.]</p></li>
+          <li><h4>Solve the problem</h4><p>[Your solution and the design decisions behind it. Link to your prototype.]</p></li>
+          <li>
+            <h4>See the result</h4>
+            <figure>
+              <div class="shot shot--phones" aria-hidden="true"><span class="ph"></span><span class="ph"></span></div>
+              <figcaption>[Final screens, prototype or before and after. Replace with real images.]</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </article>
 
-      <section class="cta" id="contact">
-        <h2>Want the whole picture?</h2>
-        <p>More case studies, research and code in the full portfolio.</p>
-        <a class="btn btn--primary btn--lg" href="[yourportfolio.com]">Visit [yourportfolio.com]</a>
-        <div class="cta__aside">or say hello: <a href="mailto:[your@email.com]">[your@email.com]</a></div>
-      </section>
-    </main>
-  </div>
+      <article class="case" id="case-gallery" aria-labelledby="case-gallery-title">
+        <header>
+          <h3 id="case-gallery-title">[Case study 2: Gallery visit experience]</h3>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>[Your role]</dd></div>
+            <div><dt>Timeframe</dt><dd>[Weeks or months]</dd></div>
+            <div><dt>Tools</dt><dd>[Your tools]</dd></div>
+          </dl>
+        </header>
+        <ol class="steps">
+          <li><h4>Identify the problem</h4><p>[Who it’s for and what you noticed going wrong.]</p></li>
+          <li><h4>Define the problem</h4><p>[Your research method, your key insight and a “How might we…?” statement.]</p></li>
+          <li><h4>Solve the problem</h4><p>[Your solution and the design decisions behind it.]</p></li>
+          <li>
+            <h4>See the result</h4>
+            <figure>
+              <div class="shot shot--poster" aria-hidden="true"><span class="ph"></span><span class="ph"></span></div>
+              <figcaption>[Wayfinding, signage or screens. Replace with real images.]</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </article>
+
+      <article class="case" id="case-cafe" aria-labelledby="case-cafe-title">
+        <header>
+          <h3 id="case-cafe-title">[Case study 3: Cafe ordering experience]</h3>
+          <dl class="facts">
+            <div><dt>Role</dt><dd>[Your role]</dd></div>
+            <div><dt>Timeframe</dt><dd>[Weeks or months]</dd></div>
+            <div><dt>Tools</dt><dd>[Your tools]</dd></div>
+          </dl>
+        </header>
+        <ol class="steps">
+          <li><h4>Identify the problem</h4><p>[Who it’s for and what you noticed going wrong.]</p></li>
+          <li><h4>Define the problem</h4><p>[Your research method, your key insight and a “How might we…?” statement.]</p></li>
+          <li><h4>Solve the problem</h4><p>[Your solution and the design decisions behind it. Link to the live build.]</p></li>
+          <li>
+            <h4>See the result</h4>
+            <figure>
+              <div class="shot shot--browser" aria-hidden="true"><span class="ph"></span><span class="ph"></span></div>
+              <figcaption>[Coded prototype or screenshots. Replace with real images.]</figcaption>
+            </figure>
+          </li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="about wrap" id="about" aria-labelledby="about-title">
+      <div>
+        <h2 id="about-title">About</h2>
+        <p>[Two or three plain sentences about who you are, what you design and the kind of work you want to do.]</p>
+        <p>[One sentence about your admin and corporate background and how it shapes the way you work with people.]</p>
+      </div>
+      <blockquote>
+        <svg class="mark mark--lg" viewBox="0 0 124 100" aria-hidden="true"><use href="#ap-mark"/></svg>
+        <p>Build the village you want around you.</p>
+      </blockquote>
+    </section>
+  </main>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-inner">
+      <h2 id="contact-title">Let’s talk about your users.</h2>
+      <p>[One line on what you’re looking for: a role, a freelance project or feedback on your portfolio.]</p>
+      <div class="actions">
+        <a class="btn btn--sun" href="mailto:your@email.com">Email Ashleigh</a>
+        <a class="btn btn--outline" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a class="btn btn--outline" href="https://www.instagram.com/your-handle">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Ashleigh Pay</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
